@@ -1,0 +1,111 @@
+body{
+background:Cyan;
+color:Maroon;
+}
+h1{
+background: MediumBlue;
+color: yellow;
+text-align: center;
+}
+h2{
+background: Black;
+color: Lime;
+text-align: center;
+}
+.green{
+color: green;
+}
+
+.red{
+position:relative;
+background:red;
+width: 100px; 
+height: 150px;
+margin: 100px 0 0 400px;
+overflow: auto;
+z-index:10;
+}
+
+.blue{
+position:relative;
+background:blue;
+width: 100px; 
+height: 150px;
+margin: -50px 0 0 426px;
+z-index:1; 
+animation: spin 3s 1;
+}
+
+.blue:hover{
+background:lime;
+width: 100px; 
+height: 150px;
+
+}
+
+img{ 
+border: 5px lime groove;
+} 
+
+
+
+
+img:hover{
+opacity: .7;
+border: 5px lime groove;
+transform: skew(9deg);
+}
+
+
+
+@keyframes spin
+{
+0% {transform rotateX(0 deg); transform-origin 0% 50% 0%;}
+100% {transform rotateX(360 deg); transform-origin 0% 50% 0%;}
+}
+
+
+nav ul{
+list-style-type:none
+
+}
+
+nav ul li{
+float: left;
+margin: 0 5px
+
+}
+
+nav ul li a{
+display: block;
+background: blue;
+color: lime;
+width: 274px; 
+height: 130px;
+font-size: 1.5em;
+text-decoration: none;
+text-align: center;
+padding-top: 15px;
+}
+
+nav ul li a:hover{
+background: lime;
+color: blue;
+
+}
+
+nav{
+width: 90%; 
+margin: 0 auto;
+}
+
+#clear{
+clear:both;
+}
+
+#show{
+font-size:3em;
+}
+
+
+

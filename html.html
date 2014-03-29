@@ -1,0 +1,59 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>www.sam.com</title>
+<link rel="stylesheet" type="text/css" href="samcss2.css">
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="samwebsite.html">Home</a></li>
+<li><a href="html.html">Fortune</a></li>
+</ul>
+</nav>
+<div id="clear"></div>
+<div id="show"></div>
+<div id="js">
+<script>
+document.write("Hello world, it's me.")
+var today = new Date();
+document.write("<br>");
+document.write(today);
+document.write("<br>");
+document.write(today.getDate()+"/"+(today.getMonth()+1)+"/"+today.getFullYear());
+
+var rand = Math.random();
+var rand1 = Math.floor(rand*5);
+document.write("<br>");
+document.write(rand);
+document.write("<br>");
+document.write(rand1);
+</script>
+</div>
+<form>
+<input id="name" placeholder="what is your name?">
+<button id="button">Click me</button>
+</form>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#js").hide();
+	var fortune = [" You will have a hot girlfriend", " You will own a huge mansion", " You will drown in chocolate milk"]
+	var fortune1 = [" You will get to vistit ", " You will never visit "]; 
+	$("#button").click(function(){
+		event.preventDefault();
+		var rand = Math.random();
+		var rand1 = Math.floor(rand*3);
+		var name = $("#name").val();
+		var city = $("#city").val();
+		$("#show").html("Welcome "+name + fortune[rand1]);
+		
+		
+	});	
+
+
+
+});
+</script>
+</body>
+</html>
